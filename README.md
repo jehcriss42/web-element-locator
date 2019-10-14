@@ -21,8 +21,8 @@ https://demo.cs-cart.com
     XPath statement
     CSS Selector
     Link text
-    ...
- 
+    ...    
+    
  *2) Examples*
  
     # Getting all menu elements (returns a list):
@@ -30,23 +30,26 @@ https://demo.cs-cart.com
     "ty-menu__item-link"
     
     # Getting one specific(electronics) menu item 
-    a) CSS Selector:  
+    a) CSS Selector:
+        ".ty-menu__item-active.ty-menu-item__electronics" 
+        or
         "#tygh_main_container .ty-menu-item__electronics"
     
     b) XPath:
-    (Following are examples of two fragile XPtah locator as the language can change 
+        "//li[contains(@class, 'ty-menu-item__electronics')]"
+    
+    (Following are examples of two fragile XPath locator as the language can change 
     and and also the position)
     
     Based on the the text:
         "//a[@class="ty-menu__item-link"][contains(.,"Electronics")]"
     Based on the position:
-        "(//a[@class="ty-menu__item-link"])[3]"
-    
-    <TODO: more examples>
-    
+        "(//a[@class="ty-menu__item-link"])[3]"    
     
 *3) References:
 
     Location Strategies: www.seleniumhq.org
-    Locating Elements: https://selenium-python.readthedocs.io/locating-elements.html
-    testautomationu.applitools.com
+    Locating Elements: selenium-python.readthedocs.io/locating-elements.html
+    Web Element Locator Strategies: testautomationu.applitools.com
+    CSS selector: www.w3schools.com/cssref/css_selectors.asp
+    XPath: www.w3schools.com/xml/xpath_syntax.asp

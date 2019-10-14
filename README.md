@@ -5,8 +5,6 @@ Examples created for study purpose using the available test site:
 
 https://demo.cs-cart.com
 
-http://todomvc.com
-
  *1) Location Strategies:*
    
     Locators are used to find and match elements on a web page. 
@@ -27,10 +25,28 @@ http://todomvc.com
  
  *2) Examples*
  
-    <TODO>
+    # Getting all menu elements (returns a list):
+    class name: 
+    "ty-menu__item-link"
+    
+    # Getting one specific(electronics) menu item 
+    a) CSS Selector:  
+        "#tygh_main_container .ty-menu-item__electronics"
+    
+    b) XPath:
+    (Following are examples of two fragile XPtah locator as the language can change 
+    and and also the position)
+    
+    Based on the the text:
+        "//a[@class="ty-menu__item-link"][contains(.,"Electronics")]"
+    Based on the position:
+        "(//a[@class="ty-menu__item-link"])[3]"
+    
+    <TODO: more examples>
+    
     
 *3) References:
 
     Location Strategies: www.seleniumhq.org
     Locating Elements: https://selenium-python.readthedocs.io/locating-elements.html
-    
+    testautomationu.applitools.com
